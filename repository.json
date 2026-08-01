@@ -17,6 +17,14 @@
       "location": "https://raw.githubusercontent.com/hugoh/hubitat-internet-monitor/master/packageManifest.json",
       "description": "Hubitat driver to monitor internet connection",
       "id": "7B07EA71-775D-489C-B28B-26A93BBE4930"
+    },
+    {
+      "name": "Samsung Tizen TV Control",
+      "category": "Integrations",
+      "tags": [ "LAN" ],
+      "location": "https://raw.githubusercontent.com/hugoh/samsung-tizen-tv-control/main/hubitat/packageManifest.json",
+      "description": "Local control of a Samsung Tizen TV (power, HDMI1 input) - no SmartThings or cloud dependency",
+      "id": "C3F794B3-E615-44C8-965A-C7664247596B"
     }
   ]
 }
