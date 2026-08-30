@@ -16,7 +16,7 @@ jobs:
       packages: read
       statuses: write
     steps:
-      - uses: hugoh/gh-workflows/setup@3491144ab533d5d7724af1975dc694c59c9db0d6 # v1.10.0
-      - uses: hugoh/gh-workflows/hk-check@3491144ab533d5d7724af1975dc694c59c9db0d6 # v1.10.0
+      - uses: hugoh/gh-workflows/setup@0605171371448c645486e3200e1940b1813ef9f1 # v1.12.0
+      - uses: hugoh/gh-workflows/hk-check@0605171371448c645486e3200e1940b1813ef9f1 # v1.12.0
         env:
           PINACT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
