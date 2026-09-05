@@ -1,22 +1,18 @@
+---
 name: hk
+
+on: # yamllint disable-line rule:truthy
+  push:
+    branches:
+      - master
+  pull_request:
 
 permissions: {}
 
-on:
-  push:
-    branches: [master]
-  pull_request:
-
 jobs:
-  check:
-    runs-on: ubuntu-latest
-    timeout-minutes: 10
+  hk:
+    uses: hugoh/gh-workflows/.github/workflows/hk.yml@bb265ccce6562fcb1ad4ae85a4aacc72de332652 # v1.20.0
     permissions:
       contents: read
       packages: read
       statuses: write
-    steps:
-      - uses: hugoh/gh-workflows/setup@0605171371448c645486e3200e1940b1813ef9f1 # v1.12.0
-      - uses: hugoh/gh-workflows/hk-check@0605171371448c645486e3200e1940b1813ef9f1 # v1.12.0
-        env:
-          PINACT_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
